@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Pricing component with toggle</title>
+
+</head>
+<body>
+  <div class="headingDiv">
+    <h2 class="heading">Our Pricing</h2>
+
+    <p class="subPlan subPlan1">Annually</p>
+
+    <label class="switch">
+      <input type="checkbox" checked id="checked">
+      <span class="slider round" onclick="displayPricing()"></span>
+    </label>
+    
+    <p class="subPlan subPlan2">Monthly</p>
+  </div>
+
+  <div class="container">
+    <div class="outerDiv row">
+      <div class="individualDiv col-sm-12 col-md-12 col-lg-4">
+        <div>
+          <h4 class="subType">Basic</h4>
+          <h1>$19.99</h1>  <!-- 199.99 -->
+        </div>
+        
+        <div>
+          <hr>
+          <h4 class="subDescription">500 GB Storage</h4>
+          <hr>
+          <h4 class="subDescription">2 Users Allowed</h4>
+          <hr>
+          <h4 class="subDescription">Send up to 3 GB</h4>
+          <hr>
+        </div>
+
+        <button type="button" class="button">LEARN MORE</button>
+      </div>
+
+      <div class="individualDiv col-sm-12 col-md-12 col-lg-4" id="professionalDiv">
+        <div>
+          <h4 class="subType" id="professionalType">Professional</h4>
+          <h1 id="professionalType">$24.99</h1> <!--249.99-->
+        </div>
+        
+        <div>
+          <hr class="professionalhr">
+          <h4 class="subDescription" id="professionalType">1 TB Storage</h4>
+          <hr class="professionalhr">
+          <h4 class="subDescription" id="professionalType">5 Users Allowed</h4>
+          <hr class="professionalhr">
+          <h4 class="subDescription" id="professionalType">Send up to 10 GB</h4>
+          <hr class="professionalhr">
+        </div>
+
+        <div>
+          <button type="button" class="professionalButton">LEARN MORE</button>
+        </div>
+      </div>
+
+      <div class="individualDiv col-sm-12 col-md-12 col-lg-4">
+        <div>
+          <h4 class="subType">Master</h4>
+          <h1>$39.99</h1>  <!-- 399.99 -->
+        </div>
+        
+        <div>
+          <hr>
+          <h4 class="subDescription">2 TB Storage</h4>
+          <hr>
+          <h4 class="subDescription">10 Users Allowed</h4>
+          <hr>
+          <h4 class="subDescription">Send up to 20 GB</h4>
+          <hr>
+        </div>
+
+        <div>
+          <button type="button" class="button">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+
+  <!-- &dollar;19.99
+  
+  
+
+  
+  &dollar;24.99
+  
+  
+  
+  
+  
+  &dollar;39.99 -->
+  
+  
+
+  
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Samuel Oluwaniyi</a>.
+  </footer>
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
